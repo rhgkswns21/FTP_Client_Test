@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Connect_bt = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -40,7 +40,7 @@
             this.tableLayoutPanel1.AutoSize = true;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.button1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.Connect_bt, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -51,26 +51,27 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(336, 189);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // button1
+            // Connect_bt
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(330, 88);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Connect_bt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Connect_bt.Location = new System.Drawing.Point(3, 3);
+            this.Connect_bt.Name = "Connect_bt";
+            this.Connect_bt.Size = new System.Drawing.Size(330, 88);
+            this.Connect_bt.TabIndex = 0;
+            this.Connect_bt.Text = "Connect";
+            this.Connect_bt.UseVisualStyleBackColor = true;
+            this.Connect_bt.Click += new System.EventHandler(this.connect_bt_Click);
             // 
             // label1
             // 
+            this.label1.AutoEllipsis = true;
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Location = new System.Drawing.Point(3, 94);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(330, 95);
             this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             // 
             // Form1
             // 
@@ -90,7 +91,7 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Connect_bt;
         private System.Windows.Forms.Label label1;
     }
 }
